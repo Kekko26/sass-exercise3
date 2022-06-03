@@ -1,0 +1,55 @@
+
+@mixin bounce($partenza: 0s, $distanza:-30px){
+    animation: bounce 1s infinite $partenza;
+
+    @keyframes bounce{
+        0%{
+
+        }
+
+        40%{
+            transform: translateY($distanza);
+        }
+
+        60%{
+            transform: translateY(calc($distanza/2));
+        }
+
+        100%{
+
+        }
+    }
+}
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .square{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+
+    }
+    .line{
+        height: 2px;
+        width: 100vw;
+        background-color: red;
+    }
+
+
+    .bounce{
+        @include bounce()
+    }
+}

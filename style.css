@@ -1,0 +1,36 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .square {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+body .line {
+  height: 2px;
+  width: 100vw;
+  background-color: red;
+}
+body .bounce {
+  animation: bounce 1s infinite 0s;
+}
+@keyframes bounce {
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
