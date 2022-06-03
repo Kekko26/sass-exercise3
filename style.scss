@@ -1,6 +1,6 @@
 
-@mixin bounce($partenza: 0s, $distanza:-30px){
-    animation: bounce 1s infinite $partenza;
+@mixin bounce($partenza: 0s, $distanza:-30px, $durata: 1s){
+    animation: bounce $durata infinite $partenza;
 
     @keyframes bounce{
         0%{
